@@ -1,20 +1,9 @@
 class HelloController < ApplicationController
-
+layout 'hello'
   def index
-    if request.post? then
-      @title = 'Result'
-      if params['s1'] then
-        @msg = 'you selected: '
-        for val in params['s1']
-          @msg += val + ' '
-        end
-        
-      else
-        @msg = 'not selected'
-      end
-    else
-      @title = 'Index'
-      @msg = 'Select list!'
-    end
+  @header = 'layout sample'
+  @footer = 'copyright Nakanishi-Jun 2018.'
+  @title = 'New Layout'
+  @msg = 'this is sample page!'
   end
 end
