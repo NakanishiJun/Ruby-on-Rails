@@ -1,0 +1,1 @@
+{"1526968896":{"name":"なかにし","mail":"j.nakanishi@gingerapp.co.jp","msg":"message"},"1526968906":{"name":"中西","mail":"j.nakanishi@gingerapp.co.jp","msg":"最初のメッセージ"}}
