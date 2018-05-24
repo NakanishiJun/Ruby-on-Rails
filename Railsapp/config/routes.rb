@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'people/index'
+  get 'people', to: 'people#index'
+  get 'people/:id', to: 'people#show'
+  get 'people/add'
+  post 'people/add', to:'people#create'
+
   get 'board/index'
   get 'hello/index'
   get 'hello', to: 'hello#index'
