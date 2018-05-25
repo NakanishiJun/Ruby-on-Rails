@@ -35,10 +35,11 @@ class PeopleController < ApplicationController
 
   def find
     @msg = 'plese type under age'
-    @people = Array.new
     if request.post? then
       f = params[:find].split(',')
-      @people = Person.where('name like ?', '%' + params[:find] + '%').order 'age asc'
+      @people = Person.all.limit(f[0]).offset(f[1])
+    else
+      @people = Person.all
     end
   end
 
