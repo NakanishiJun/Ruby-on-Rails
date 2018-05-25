@@ -37,7 +37,8 @@ class PeopleController < ApplicationController
     @msg = 'plese type under age'
     @people = Array.new
     if request.post? then
-      @people = Person.where "age >= ?", params[:find]
+      @people = Person.where "mail like ?",
+      '%' + params[:find] + '%'
     end
   end
 
