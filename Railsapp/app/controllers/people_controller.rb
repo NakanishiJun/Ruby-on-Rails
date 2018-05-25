@@ -1,4 +1,5 @@
 class PeopleController < ApplicationController
+  layout 'people'
   def index
     @msg ='Person data'
     @data =Person.all
@@ -30,6 +31,15 @@ class PeopleController < ApplicationController
     obj = Person.find(params[:id])
     obj.update(person_params)
     redirect_to '/people'
+  end
+
+  def find
+    @msg = 'plese type search word'
+    @people = Array.new
+    if request.post? then
+      obj = Person.find params['find']
+      @people.push obj
+    end
   end
 
   def delete
