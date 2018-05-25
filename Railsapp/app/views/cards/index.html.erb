@@ -2,9 +2,9 @@
 <p>現在登録されているデータの一覧です。</p>
 <table width= "100%">
   <tr>
-    <th>ID</th><th>署名</th><th>署名</th><th colspan="2"></th>
+    <th>ID</th><th>署名</th><th>著者</th><th colspan="2"></th>
   </tr>
-  <%= @cards.each do |obj| %>
+  <% @cards.each do |obj| %>
   <tr>
     <td width="35px"><%= obj.id %></td>
     <td width="50%"><a href="/cards/<%= obj.id %>"><%= obj.title %></a></td>
@@ -16,4 +16,4 @@
     </tr>
     <% end %>
   </table>
-  <p class="link"><a href="/cards/add">※新しいデータを入力 &gt;$gt;</a></p>
+  <p class="link"><a href="/cards/add">※新しいデータを入力 &gt;&gt;</a></p>

@@ -1,11 +1,11 @@
 <h1>Cards#add</h1>
 <p>※登録する読書データを入力して下さい。</p>
 <table>
-  <%= form_for(card,url:{controller:'cards', action: 'add'}) do |form| %>
+  <%= form_for(@card,url:{controller:'cards', action: 'add'}) do |form| %>
   <tr><th>タイトル</th>
     <td><%= form.text_field :title, {size:40} %></td></tr>
   <tr><th>著者</th>
-    <td><%= form.text_field :autor, {size:40} %></td></tr>
+    <td><%= form.text_field :author, {size:40} %></td></tr>
   <tr><th>価格</th>
     <td><%= form.number_field :price, {size:10} %></td></tr>
   <tr><th>出版社</th>

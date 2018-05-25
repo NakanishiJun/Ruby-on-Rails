@@ -1,7 +1,7 @@
 <h1>Cards#show</h1>
-<p>※「<%= @cards.title %>」の読書データ</p>
+<p>※「<%= @card.title %>」の読書データ</p>
 <table>
-  <tr><th width="1000px">ID</th>
+  <tr><th width="100px">ID</th>
     <td><%= @card.id %></td></tr>
   <tr><th>タイトル</th>
     <td><%= @card.title %></td></tr>
@@ -14,5 +14,6 @@
   <tr><th>コメント</th>
     <td><%= @card.memo %></td></tr>
 </table>
+
 
 <p class="link"><a href="/cards">&lt;&lt; ※トップページに戻る</a></p>
