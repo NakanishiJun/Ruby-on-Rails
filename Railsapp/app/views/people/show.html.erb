@@ -12,6 +12,12 @@
     <td><%= @data.mail%></td></tr>
   <tr>
     <th>Message</th>
-    <td><%= @data.message != nil ? @data.message.message : 'none' %></td>
+    <td>
+      <%= if @data.message != nil ? then %>
+        <%= @data.message.each do |obj| %>
+          <%= '「' + obj.title + '」'%>
+        <% end %>
+      <% end %>
+    </td>
   </tr>
 </table>
