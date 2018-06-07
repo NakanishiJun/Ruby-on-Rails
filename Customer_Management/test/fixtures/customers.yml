@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  distributor_id: 1
+  customer_name: MyText
+  customer_rep: MyText
+  customer_mail: MyText
+  plan_id: 1
+  platform_id: 1
+  hosting_account: MyText
+  agreement_data: 2018-06-07
+  eLM_domain: MyText
+  elm_admin_id: MyText
+  elm_admin_id: MyText
+  elm_admin_pw: MyText
+  elm_user_id: MyText
+  elm_user_pw: MyText
+  cf_id: MyText
+  cf_pw: MyText
+  server_info: MyText
+  mail_server_info: MyText
+  sql_server_info: MyText
+  dns_info: MyText
+  option_4: MyText
+  option_5: MyText
+  option_6: MyText
+  option_7: MyText
+  option_8: MyText
+  option_9: MyText
+  option_10: MyText
+
+two:
+  customer_id: 1
+  distributor_id: 1
+  customer_name: MyText
+  customer_rep: MyText
+  customer_mail: MyText
+  plan_id: 1
+  platform_id: 1
+  hosting_account: MyText
+  agreement_data: 2018-06-07
+  eLM_domain: MyText
+  elm_admin_id: MyText
+  elm_admin_id: MyText
+  elm_admin_pw: MyText
+  elm_user_id: MyText
+  elm_user_pw: MyText
+  cf_id: MyText
+  cf_pw: MyText
+  server_info: MyText
+  mail_server_info: MyText
+  sql_server_info: MyText
+  dns_info: MyText
+  option_4: MyText
+  option_5: MyText
+  option_6: MyText
+  option_7: MyText
+  option_8: MyText
+  option_9: MyText
+  option_10: MyText
