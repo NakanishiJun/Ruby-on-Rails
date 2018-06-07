@@ -1,2 +1,46 @@
 <h1>Blogposts#add</h1>
-<p>Find me in app/views/blogposts/add.html.erb</p>
+<p>※ブログの記事の投稿</p>
+<ul>
+  <% if @blogpost.errors.full_messages.each do |err| %>
+    <li><%= err %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<table>
+  <%= form_for(@blogpost, url{controller:'blogposts' action:'add'}) do |form| %>
+  <tr>
+    <th>Title</th>
+    <td><%= form.text_field :title %></td>
+  </tr>
+  <tr>
+    <th>read</th>
+    <td><%= form.text_field :read %></td>
+  </tr>
+  <tr>
+    <th>Content</th>
+    <td><%= form.text_area :content,{cols:40, rows:10} %></td>
+  </tr>
+  <tr>
+    <th>Genre ID</th>
+    <td><%= form.text_field :bloggenre_id %></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td><%= form.submit "送信" %></td>
+  </tr>
+  <% end %>
+</table>
+
+<p>※ジャンルの一種</p>
+<table>
+  <tr>
+    <th>ID</th><th>Genre</th>
+  </tr>
+  <% genres.each do |obj| %>
+  <tr>
+    <td><%= obj.id %></td>
+    <td><%= obj.name %></td>
+  </tr>
+  <% end %>
+</table>
