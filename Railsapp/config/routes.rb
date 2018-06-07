@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'blogs/index'
+  get 'blogs/genre'
+  get 'blogs/show'
   get 'bloggenres/index'
   get 'bloggenres/add'
   get 'bloggenres/edit'
