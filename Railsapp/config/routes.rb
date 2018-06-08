@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mycontacts
   get 'blogs/index'
   get 'blogs', to: 'blogs#index'
   get 'blogs/:page', to: 'blogs#index'
@@ -24,7 +25,7 @@ Rails.application.routes.draw do
   get 'blogposts/delete'
 
   get 'bloggenres/index'
-  get 'bloggenres', to 'bloggenres#index'
+  get 'bloggenres', to: 'bloggenres#index'
 
   get 'bloggenres/add'
   post 'bloggenres/add'
@@ -33,7 +34,7 @@ Rails.application.routes.draw do
   patch  'bloggenres/:id', to: 'bloggenres#edit'
 
   get 'blogconfigs/index'
-  get 'blogconfigs', to 'blogconfigs#index'
+  get 'blogconfigs', to: 'blogconfigs#index'
 
   get 'blogconfigs/edit'
   patch 'blogconfigs/edit'
