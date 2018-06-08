@@ -9,7 +9,7 @@ one:
   plan_id: 1
   platform_id: 1
   hosting_account: MyText
-  agreement_data: 2018-06-07
+  agreement_data: 2018-06-08
   eLM_domain: MyText
   elm_admin_id: MyText
   elm_admin_id: MyText
@@ -39,7 +39,7 @@ two:
   plan_id: 1
   platform_id: 1
   hosting_account: MyText
-  agreement_data: 2018-06-07
+  agreement_data: 2018-06-08
   eLM_domain: MyText
   elm_admin_id: MyText
   elm_admin_id: MyText

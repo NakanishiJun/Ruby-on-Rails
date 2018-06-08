@@ -1,0 +1,2 @@
+json.extract! customer, :id, :customer_id, :distributor_id, :customer_name, :customer_rep, :customer_mail, :plan_id, :platform_id, :hosting_account, :agreement_data, :eLM_domain, :elm_admin_id, :elm_admin_id, :elm_admin_pw, :elm_user_id, :elm_user_pw, :cf_id, :cf_pw, :server_info, :mail_server_info, :sql_server_info, :dns_info, :option_4, :option_5, :option_6, :option_7, :option_8, :option_9, :option_10, :created_at, :updated_at
+json.url customer_url(customer, format: :json)

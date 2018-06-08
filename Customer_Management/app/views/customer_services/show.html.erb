@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @customer_service.customer_id %>
+</p>
+
+<p>
+  <strong>Deal date:</strong>
+  <%= @customer_service.deal_date %>
+</p>
+
+<p>
+  <strong>Staff:</strong>
+  <%= @customer_service.staff_id %>
+</p>
+
+<p>
+  <strong>Issue:</strong>
+  <%= @customer_service.issue %>
+</p>
+
+<%= link_to 'Edit', edit_customer_service_path(@customer_service) %> |
+<%= link_to 'Back', customer_services_path %>

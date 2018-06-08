@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customer</th>
+      <th>Distributor</th>
+      <th>Customer name</th>
+      <th>Customer rep</th>
+      <th>Customer mail</th>
+      <th>Plan</th>
+      <th>Platform</th>
+      <th>Hosting account</th>
+      <th>Agreement data</th>
+      <th>Elm domain</th>
+      <th>Elm admin</th>
+      <th>Elm admin</th>
+      <th>Elm admin pw</th>
+      <th>Elm user</th>
+      <th>Elm user pw</th>
+      <th>Cf</th>
+      <th>Cf pw</th>
+      <th>Server info</th>
+      <th>Mail server info</th>
+      <th>Sql server info</th>
+      <th>Dns info</th>
+      <th>Option 4</th>
+      <th>Option 5</th>
+      <th>Option 6</th>
+      <th>Option 7</th>
+      <th>Option 8</th>
+      <th>Option 9</th>
+      <th>Option 10</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.customer_id %></td>
+        <td><%= customer.distributor_id %></td>
+        <td><%= customer.customer_name %></td>
+        <td><%= customer.customer_rep %></td>
+        <td><%= customer.customer_mail %></td>
+        <td><%= customer.plan_id %></td>
+        <td><%= customer.platform_id %></td>
+        <td><%= customer.hosting_account %></td>
+        <td><%= customer.agreement_data %></td>
+        <td><%= customer.eLM_domain %></td>
+        <td><%= customer.elm_admin_id %></td>
+        <td><%= customer.elm_admin_id %></td>
+        <td><%= customer.elm_admin_pw %></td>
+        <td><%= customer.elm_user_id %></td>
+        <td><%= customer.elm_user_pw %></td>
+        <td><%= customer.cf_id %></td>
+        <td><%= customer.cf_pw %></td>
+        <td><%= customer.server_info %></td>
+        <td><%= customer.mail_server_info %></td>
+        <td><%= customer.sql_server_info %></td>
+        <td><%= customer.dns_info %></td>
+        <td><%= customer.option_4 %></td>
+        <td><%= customer.option_5 %></td>
+        <td><%= customer.option_6 %></td>
+        <td><%= customer.option_7 %></td>
+        <td><%= customer.option_8 %></td>
+        <td><%= customer.option_9 %></td>
+        <td><%= customer.option_10 %></td>
+        <td><%= link_to 'Show', customer %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>
