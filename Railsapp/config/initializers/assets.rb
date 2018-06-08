@@ -32,3 +32,6 @@ Rails.application.config.assets.precompile += %w(bloggenres.js)
 
 Rails.application.config.assets.precompile += %w(blogposts.css)
 Rails.application.config.assets.precompile += %w(blogposts.js)
+
+Rails.application.config.assets.precompile += %w(questions.css)
+Rails.application.config.assets.precompile += %w(questions.js)
